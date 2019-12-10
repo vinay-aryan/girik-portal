@@ -1346,6 +1346,8 @@ figure {
 
 .single-product-item figure img {
   min-width: 100%;
+  vertical-align: middle;
+  border-style: none;
 }
 
 .single-product-item figure .p-status {
@@ -1360,11 +1362,11 @@ figure {
 }
 
 .single-product-item figure .p-status.sale {
-  background: #FE439F;
+  background: #D0D7DB;
 }
 
 .single-product-item figure .p-status.popular {
-  background: #D0D7DB;
+  background: #FE439F;
 }
 
 .single-product-item .product-text {
