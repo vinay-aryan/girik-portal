@@ -46,6 +46,48 @@
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
+    <style>
+.product-container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.product-container:hover .image {
+  opacity: 0.3;
+}
+
+.product-container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 0px 0px;
+}
+</style>
+
 
 </head>
 
@@ -80,6 +122,10 @@
                                 </li>
     							<li class="active">
                                         <a href="product.html" class="fh5co-sub-ddown">Product</a>
+                                        <ul class="fh5co-sub-menu">                                        
+                                            <li><a href="product.html">Catle Product</a></li>
+                                            <li><a href="leadership.html">Swine Product</a></li>
+                                        </ul>
                                 </li>
                                 <li>
                                         <a href="about.html" class="fh5co-sub-ddown">About Us</a>
@@ -95,14 +141,26 @@
                 </div>
             </header>
             <!-- end header  -->
+
+            <section class="container-fluid bggreay">
+                <section class="container">
+                    <section class="row">
+                        <article class="col-md-12">
+                            <ul>
+                                <li><a href="index.html"> Home</a></li>
+                                <li><a href="product.html"> Product</a></li>                                
+                            </ul>
+                        </article>
+                    </section>
+                </section>
+            </section>
                  <!-- Related Product Section Begin -->
-   <!-- Related Product Section Begin -->
-    <section class="related-product spad">
+   <section class="related-product spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
-                        <h2>Girik Products</h2>
+                        <h2>Catle Products</h2>
                     </div>
                 </div>
             </div>
@@ -110,27 +168,27 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-product-item">
-                        <div class="product-container">
-                            <figure>
-                            <img src="images/products/Calf_Starter_Nutri.jpeg" class="img-responsive image" alt="">
-                            <!-- <div class="p-status popular">popular</div> -->
-                             <div class="middle">
-                                <div class="text">
-                                 <b>Girik Calf Starter Nutri</b></br>
-                                 Pellet feed for 03-month calf</div>
-                                </div>
-                            </div>  
-                           </figure>    
-                           <div class="product-text">
-                            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#enquiry-Modal">Enquiry</button>
-                        </div>                   
-                    </div>
+                        <a href="girik_calf_starter_nutri.html">
+                            <div class="product-container">
+                                <figure>
+                                <img src="images/products/Calf_Starter_Nutri.jpeg" class="img-responsive image" alt="">
+                                <!-- <div class="p-status popular">popular</div> -->
+                                 <div class="middle">
+                                    <div class="text">
+                                     <b>Girik Calf Starter Nutri</b></br>
+                                     Pellet feed for 03-month calf</div>
+                                    </div>
+                                </div>  
+                               </figure>                           
+                            </div>
+                        </a>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-product-item">
+                         <a href="girik_calf_grower_nutri.html">
                             <div class="product-container">
                                 <figure>
-                                    <img src="images/products/Calf_Grower_Nutri.jpeg" class="img-responsive image" alt="" >
+                                   <img src="images/products/Calf_Grower_Nutri.jpeg" class="img-responsive image" alt="" > 
                                     <div class="p-status popular">popular</div>
                                     <div class="middle">
                                         <div class="text">
@@ -138,15 +196,14 @@
                                              Up to 3-9 months of age, for the development of bones and muscles
                                         </div>
                                     </div>
-                                </figure>
-                                <div class="product-text">
-                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#enquiry-Modal">Enquiry</button>
-                                </div>
-                            </div>                                            
+                                </figure>                              
+                            </div>  
+                            </a>                                          
                     </div>
                 </div>                
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-product-item">
+                        <a href="girik_calf_grower_nutri.html">
                         <div class="product-container">
                             <figure>
                                 <img src="images/products/Dry_Heifer_Nutri.jpeg" class="img-responsive image" alt="Dry Heifer Nutri" >
@@ -157,30 +214,27 @@
                                         9 months of age to one month before declaration
                                     </div>
                                 </div>
-                           </figure>
-                            <div class="product-text">
-                             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#enquiry-Modal">Enquiry</button>
-                            </div>  
-                        </div>                  
+                           </figure>                           
+                        </div>  
+                        </a>
                     </div>
                 </div>                    
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-product-item">
-                        <div class="product-container">
-                            <figure>
-                               <img src="images/products/Transition_Nutri.jpeg" class="img-responsive image" alt="Transition Nutri"/>
-                               <div class="p-status popular">popular</div>
-                               <div class="middle">
-                                    <div class="text">
-                                        <b>Girik Transition Nutri</b> </br>
-                                        “from 4 weeks before breeding to 4 weeks later”
-                                    </div>
-                                </div>    
-                            </figure>
-                             <div class="product-text">
-                             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#enquiry-Modal">Enquiry</button>
+                        <a href="girik_transition_nutri.html">
+                            <div class="product-container">
+                                <figure>
+                                   <img src="images/products/Transition_Nutri.jpeg" class="img-responsive image" alt="Transition Nutri"/>
+                                   <div class="p-status popular">popular</div>
+                                   <div class="middle">
+                                        <div class="text">
+                                            <b>Girik Transition Nutri</b> </br>
+                                            “from 4 weeks before breeding to 4 weeks later”
+                                        </div>
+                                    </div>    
+                                </figure>                             
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>                
             </div>                
@@ -188,6 +242,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-product-item">
+                        <a href="girik_energy_promoter.html">
                         <div class="product-container" >
                             <figure>
                                 <img src="images/products/Energy_Promoter.jpeg" class="img-responsive image" alt="Energy Promoter">
@@ -199,15 +254,14 @@
                                   </div>
                                 </div>
                             </figure> 
-                             <div class="product-text">
-                                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#enquiry-Modal">Enquiry</button>
-                              </div>   
                         </div>
+                    </a>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-product-item">
+                        <a href="girik_milk_promoter_10000.html">
                         <div class="product-container">
                              <figure>
                                 <img src="images/products/Milk_Promoter_10000.jpeg" class="img-responsive image" alt="MilkPromoter 10000">
@@ -217,16 +271,15 @@
                                         High energy supplements for cows milking more than 30 litres 
                                     </div>                       
                                 </div>
-                             </figure> 
-                             <div class="product-text">
-                                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#enquiry-Modal">Enquiry</button>
-                              </div>  
+                             </figure>                              
                         </div>
+                    </a>
                     </div>
                 </div>
                 
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-product-item">
+                        <a href="girik_milk_promoter_8000.html">
                         <div class="product-container">
                             <figure>
                                 <img src="images/products/Milk_Promoter_8000.jpeg" class="img-responsive image" alt="Milk Promoter 8000">
@@ -236,15 +289,14 @@
                                         Complete and high energy dosage of cows milking up to 20 litres                           
                                     </div>
                                 </div>
-                            </figure>
-                            <div class="product-text">
-                                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#enquiry-Modal">Enquiry</button>
-                            </div> 
+                            </figure>                           
                         </div>
+                    </a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-product-item">
+                        <a href="girik_milk_promoter_5000.html">
                         <div class="product-container">
                             <figure>
                                 <img src="images/products/Milk_Promoter_5000.jpeg" class="img-responsive image" alt="Milk Promoter 5000">
@@ -253,17 +305,16 @@
                                         Full dose for cows milking up to 15 litres  
                                     </div>
                                 </div>
-                            </figure>
-                            <div class="product-text">
-                                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#enquiry-Modal">Enquiry</button>
-                            </div> 
+                            </figure>                            
                         </div>
+                    </a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-product-item">
+                        <a href="girik_cream_dariya.html">
                         <div class="product-container">
                             <figure>
                                 <img src="images/products/Cream_Dariya.jpeg" class="img-responsive image" alt="Cream Dariya">
@@ -273,16 +324,15 @@
                                         For gentle buffaloes milking above 10 litres
                                     </div>
                                 </div>
-                            </figure>
-                            <div class="product-text">
-                                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#enquiry-Modal">Enquiry</button>
-                            </div> 
+                            </figure>                            
                         </div>
+                    </a>
                     </div>
                 </div>
 
                 <div class="col-lg-3 col-sm-6">
                     <div class="single-product-item">
+                        <a href="girik_doodh_dariya.html">
                         <div class="product-container">
                             <figure>
                             <img src="images/products/Doodh_Dariya.jpeg" class="img-responsive image" alt="Doodh Dariya">
@@ -292,16 +342,24 @@
                                     Features for cows milking up to 10 litres
                                 </div>
                             </div>
-                           </figure>
-                           <div class="product-text">
-                                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#enquiry-Modal">Enquiry</button>
-                            </div> 
+                           </figure>                           
                         </div>
+                    </a>
                     </div>
                 </div>
             </div>
     </section>
-    <!-- Related Product Section End -->
+    <section class="related-product spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Swine Products (Comming Soon)</h2>
+                    </div>
+                </div>
+            </div>            
+        </div>        
+    </section>    
             
             <!-- start:footer  -->
     <footer class="site-footer">
