@@ -88,6 +88,15 @@
   font-size: 16px;
   padding: 0px 0px;
 }
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
 </style>
 
 </head>
@@ -124,7 +133,7 @@
     							<li>
                                         <a href="product.html" class="fh5co-sub-ddown">Product</a>
                                         <ul class="fh5co-sub-menu">                                        
-                                            <li><a href="product.html">Catle Product</a></li>
+                                            <li><a href="product.html">Cattle Product</a></li>
                                             <li><a href="leadership.html">Swine Product</a></li>
                                         </ul>
                                 </li>
@@ -133,7 +142,7 @@
                                 </li>
                                 <li><a href="contact.html">Contact</a></li>
                                 <li>
-                                    <button type="button" class="btn btn-success bounceOutUp" data-toggle="modal" data-target="#enquiry-Modal">
+                                    <button type="button" class="btn btn-success animated flash infinite" data-toggle="modal" data-target="#enquiry-Modal">
                                         Enquiry</button>
                                 </li>
                             </ul>
@@ -238,7 +247,7 @@
                             <div class="feature-copy">
                                 <h3>Enquery</h3>
                                 <p>It comes as a great help to meet feeds needs for various feed additives to support animal health and performance.</p>
-                                <p><a href="#" data-toggle="modal" data-target="#enquiry-Modal">Enquiry Now</a></p>
+                                <p><a href="#" class="animated flash infinite" data-toggle="modal" data-target="#enquiry-Modal">Enquiry Now</a></p>
                                 <!-- <p><button type="button" class="btn btn-link" data-toggle="modal" data-target="#enquiry-Modal">
                                     Enquiry</button></p> -->
                                 
