@@ -7,69 +7,95 @@
 <!--<![endif]-->
 
 <head>
-   <!--<style>
-   .product-img figure {
-	margin: 0;
-	position: relative;
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Girik Feeds</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Superfish -->
+    <link rel="stylesheet" href="css/superfish.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.product-container {
+  position: relative;
+  width: 100%;
 }
 
-.product-img figure img {
-	min-width: 100%;
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
 }
 
-.product-img figure .p-status {
-	position: absolute;
-	left: 20px;
-	top: 20px;
-	padding: 3px 16px;
-	font-size: 12px;
-	background: #1e1e1e;
-	color: #fff;
-	border-radius: 50px;
-
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-</style> 	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+.product-container:hover .image {
+  opacity: 0.3;
+}
 
-	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-	<link rel="shortcut icon" href="favicon.ico">
+.product-container:hover .middle {
+  opacity: 1;
+}
 
-	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'> -->
-
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Superfish -->
-	<link rel="stylesheet" href="css/superfish.css">
-
-	<link rel="stylesheet" href="css/style.css">
-
-
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 0px 0px;
+}
+</style>
 
 </head>
 
 <body>
-	<div id="fh5co-wrapper">
-		<div id="fh5co-page">
-			<!-- <div class="header-top">
+    <div id="fh5co-wrapper">
+        <div id="fh5co-page">
+            <!-- <div class="header-top">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 text-left fh5co-link">
@@ -92,10 +118,10 @@
                         <!-- START #fh5co-menu-wrap -->
                         <nav id="fh5co-menu-wrap" role="navigation">
                             <ul class="sf-menu" id="fh5co-primary-menu">
-    							<li>
+                                <li class="active">
                                         <a href="index.html" class="fh5co-sub-ddown">Home</a>
                                 </li>
-    							<li class="active">
+                                <li>
                                         <a href="product.html" class="fh5co-sub-ddown">Product</a>
                                         <ul class="fh5co-sub-menu">                                        
                                             <li><a href="product.html">Cattle Product</a></li>
@@ -107,15 +133,14 @@
                                 </li>
                                 <li><a href="contact.html">Contact</a></li>
                                 <li>
-                                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#enquiry-Modal">
+                                    <button type="button" class="btn btn-success animated flash infinite" data-toggle="modal" data-target="#enquiry-Modal">
                                         Enquiry</button>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                 </div>
-            </header>
-            <!-- end header  -->
+            </header>            <!-- end header  -->
                  <!-- Related Product Section Begin -->
             <section class="container-fluid bggreay">
                 <section class="container">
@@ -146,8 +171,8 @@
 				</div>               
                 <div class="col-lg-8">
                     <div class="product-content">
-                        <h1>Girik Energy Promoter</h1>
-						<h2>High Energy Dose</h2>
+                        <h2>Girik Energy Promoter</h2>
+						<h3>High Energy Dose</h3>
                         <p><strong>Characteristics:</strong></p>
 							<ul>
 							  <li>High fat and high digestible fibre containing supplements.<strong></strong></li>
